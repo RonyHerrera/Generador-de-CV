@@ -38,7 +38,7 @@ create = () => {
             All = All.replace(NewAll + ",", "");
             ArrayAll.push(NewAll);
         }
-        ////////////////////////
+
         let Work = inputWork.value.concat(",");
         const ArrayWork = [];
 
@@ -51,7 +51,7 @@ create = () => {
 
             ArrayWork.push(NewWork);
         }
-        ///////////////////////////////
+
         let education = inputEdu.value.concat(",");
         const ArrayEdu = [];
 
@@ -64,7 +64,8 @@ create = () => {
 
             ArrayEdu.push(NewEdu);
         }
-        ////////////////////////
+
+
         let Skill = inputSkill.value.concat(",");
 
         const ArraySkill = [];
@@ -78,10 +79,6 @@ create = () => {
 
             ArraySkill.push(NewSkill);
         }
-
-
-
-
 
         const mainContainer = document.getElementById("Container-CV");
 
@@ -98,8 +95,8 @@ create = () => {
         divMd4.setAttribute("class", "col-md-4 float-start ms-md-auto");
         //////////////////////////////////////////////////////////////
         const img = document.createElement("img");
-        img.setAttribute("height", "310");
-        img.setAttribute("width", "310");
+        img.setAttribute("height", "311");
+        img.setAttribute("width", "311");
         img.setAttribute("class", "rounded-circle my-3");
         img.setAttribute("src", "img/fSAFBSDVZXCCAS.png");
 
@@ -140,6 +137,7 @@ create = () => {
 
         const ul1 = document.createElement("ul");
         ul1.setAttribute("class", "list-group list-group-flush");
+
 
         const licorrero = document.createElement("li");
         licorrero.setAttribute("class", "list-group-item rounded-pill mb-1");
@@ -237,8 +235,6 @@ create = () => {
         liEdu3.innerText = ArrayEdu[2];
         ////////////////////////////////////////////////////////////////
 
-
-
         const divmd11Skill = document.createElement("div");
         divmd11Skill.setAttribute("class", "col-md-11 bg-primary rounded-start mb-2 mt-5 float-end");
 
@@ -273,7 +269,7 @@ create = () => {
         liSkill6.setAttribute("class", "list-group-item mb-2");
         liSkill6.innerText = ArraySkill[5];
         ///////////////////////////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////////////////
+
         mainContainer.appendChild(divMd10);
         divMd10.appendChild(divCard);
         divCard.appendChild(divCardbody);
@@ -289,11 +285,6 @@ create = () => {
         divMd4.appendChild(divmd10int3);
         divMd4.appendChild(div4);
         divMd4.appendChild(divis);
-
-
-
-
-
 
         div1.appendChild(h2Name);
         divmd10int1.appendChild(minidiv1);
